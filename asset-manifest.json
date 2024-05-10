@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/new-repo/static/css/main.58fc97b8.css",
+    "main.js": "/new-repo/static/js/main.d2553a12.js",
+    "static/js/453.d0b11b3f.chunk.js": "/new-repo/static/js/453.d0b11b3f.chunk.js",
+    "static/media/contactimg.jpg": "/new-repo/static/media/contactimg.267f05f952ad5a009f44.jpg",
+    "static/media/4.jpg": "/new-repo/static/media/4.aa79b8a80b6898d7dd71.jpg",
+    "static/media/5.jpg": "/new-repo/static/media/5.5d3795a343f9791d57b4.jpg",
+    "static/media/2.jpg": "/new-repo/static/media/2.41dba000d7bccb42f08b.jpg",
+    "static/media/homeBackgroudImage.jpg": "/new-repo/static/media/homeBackgroudImage.70d1b0b3bb35b625fb5d.jpg",
+    "static/media/3.jpg": "/new-repo/static/media/3.9ba21b418c7ef6876ad1.jpg",
+    "static/media/aboutUsHeroImage.png": "/new-repo/static/media/aboutUsHeroImage.38b8f01836e86d7149a2.png",
+    "static/media/trolley.jpeg": "/new-repo/static/media/trolley.2426058521372c3df53e.jpeg",
+    "static/media/cultivator.png": "/new-repo/static/media/cultivator.8281654c41dd2991ea4d.png",
+    "static/media/Rotavator.jpeg": "/new-repo/static/media/Rotavator.6616f782c5b604ae2b92.jpeg",
+    "static/media/plough.jpeg": "/new-repo/static/media/plough.c5c8af9fb151caad0970.jpeg",
+    "static/media/GarudHarvester.jpeg": "/new-repo/static/media/GarudHarvester.e4eebfe30c1ba56a7dd3.jpeg",
+    "static/media/GarudSuperSeeder.jpeg": "/new-repo/static/media/GarudSuperSeeder.0461a2e5bab1905abe1a.jpeg",
+    "static/media/GarudPoloRotaryTiller.jpeg": "/new-repo/static/media/GarudPoloRotaryTiller.037cca67ecf48042c7ef.jpeg",
+    "static/media/GarudPlus.jpeg": "/new-repo/static/media/GarudPlus.e7e9a5f0ca0101d24e30.jpeg",
+    "static/media/logo.png": "/new-repo/static/media/logo.ea44b4a7d47566046ec3.png",
+    "static/media/GarudReverseForwardRotaryTiller.jpeg": "/new-repo/static/media/GarudReverseForwardRotaryTiller.27a1cd4e2cb60aa454dd.jpeg",
+    "static/media/GarudSamratRotaryTiller.jpeg": "/new-repo/static/media/GarudSamratRotaryTiller.4196188a84094cc2f0fb.jpeg",
+    "static/media/GarudBalerPolo.jpeg": "/new-repo/static/media/GarudBalerPolo.85ffecba0eed64a99065.jpeg",
+    "static/media/GarudSupremoRotaryTiller.jpeg": "/new-repo/static/media/GarudSupremoRotaryTiller.367b9d2422e7e71294e5.jpeg",
+    "index.html": "/new-repo/index.html",
+    "main.58fc97b8.css.map": "/new-repo/static/css/main.58fc97b8.css.map",
+    "main.d2553a12.js.map": "/new-repo/static/js/main.d2553a12.js.map",
+    "453.d0b11b3f.chunk.js.map": "/new-repo/static/js/453.d0b11b3f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58fc97b8.css",
+    "static/js/main.d2553a12.js"
+  ]
+}
