@@ -1,3 +1,10 @@
+import {
+  Box,
+  Button,
+  Container,
+  OutlinedInput,
+  Typography,
+} from "@mui/material";
 import React, { useState } from "react";
 
 const Contactform = () => {
@@ -28,54 +35,131 @@ const Contactform = () => {
 
   return (
     <>
-      <div className="main">
-        <form></form>
-        <div className="form">
-          <input
+      <Container
+        sx={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        className="main"
+      >
+        <OutlinedInput
+          type="text"
+          value={name}
+          sx={{
+            width: "100%",
+            mx: 2,
+            my: 1,
+            borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
+            px: 4,
+            color: "primary.main",
+            fontSize: "2rem",
+          }}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+          placeholder="तुमचे नाव"
+        />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: {
+              lg: "row",
+              md: "column",
+              sm: "column",
+              xs: "column",
+            },
+            justifyContent: "center",
+          }}
+        >
+          <OutlinedInput
             type="text"
-            value={name}
             onChange={(e) => {
-              setName(e.target.value);
+              setEmail(e.target.value);
             }}
-            placeholder="तुमचे नाव"
-          />
-          <div className="snd">
-            <input
-              type="text"
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-              value={email}
-              placeholder="इ-मेल"
-            />
-            <input
-              type="text"
-              onChange={(e) => {
-                setPhone(e.target.value);
-              }}
-              value={phone}
-              placeholder="फोन नं."
-            />
-          </div>
-          <input
-            type="text"
-            value={prod}
-            onChange={(e) => {
-              setProd(e.target.value);
+            sx={{
+              width: { lg: "100", md: "100%", sm: "100%" },
+              mx: 2,
+              my: 1,
+              borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
+              px: 4,
+              color: "primary.main",
+              fontSize: "2rem",
             }}
-            placeholder="तुम्ही खरेदी करू इच्छित अवजाराचे नाव"
+            value={email}
+            placeholder="इ-मेल"
           />
-          <input
+          <OutlinedInput
             type="text"
             onChange={(e) => {
-              setAddr(e.target.value);
+              setPhone(e.target.value);
             }}
-            value={addr}
-            placeholder="तुमचा पत्ता"
+            sx={{
+              width: { lg: "100", md: "100%", sm: "100%" },
+              mx: 2,
+              my: 1,
+              borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
+              px: 4,
+              color: "primary.main",
+              fontSize: "2rem",
+            }}
+            value={phone}
+            placeholder="फोन नं."
           />
-          <button onClick={Submitform}>नोंदणी पूर्ण करा</button>
-        </div>
-      </div>
+        </Box>
+        <OutlinedInput
+          type="text"
+          value={prod}
+          onChange={(e) => {
+            setProd(e.target.value);
+          }}
+          sx={{
+            width: "100%",
+            mx: 2,
+            my: 1,
+            borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
+            px: 4,
+            color: "primary.main",
+            fontSize: "2rem",
+          }}
+          placeholder="तुम्ही खरेदी करू इच्छित अवजाराचे नाव"
+        />
+        <OutlinedInput
+          type="text"
+          onChange={(e) => {
+            setAddr(e.target.value);
+          }}
+          value={addr}
+          sx={{
+            width: "100%",
+            mx: 2,
+            my: 1,
+            borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
+            px: 4,
+            color: "primary.main",
+            fontSize: "2rem",
+          }}
+          placeholder="तुमचा पत्ता"
+        />
+        <Button
+          variant="outlined"
+          sx={{
+            px: 6,
+            py: 2,
+            borderRadius: 50,
+            width: { lg: "25%", md: "100%", sm: "100%" },
+            ":hover": {
+              bgcolor: "primary.main",
+              color: "secondary.main",
+            },
+          }}
+          onClick={Submitform}
+        >
+          <Typography variant="h2">नोंदणी पूर्ण करा</Typography>
+        </Button>
+      </Container>
     </>
   );
 };

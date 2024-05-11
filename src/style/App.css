@@ -207,7 +207,7 @@ body {
 }
 .form {
   width: 100%;
-  /* height: max-content; */
+  height: max-content;
   display: flex;
   flex-direction: column;
   height: 90%;

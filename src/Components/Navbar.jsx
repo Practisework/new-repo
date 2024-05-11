@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
+import { Container } from "@mui/material";
 
 const Navbar = () => {
   return (
     <>
-      <div className="navbar">
+      <Container sx={{ display: "flex", justifyContent: "space-between" }}>
         <div className="logoCont">
           <Link className="logo" to="/">
             <img src={logo} alt="" className="logoimg" />
@@ -16,7 +17,7 @@ const Navbar = () => {
           <Link to="/about">आमचे ध्येय</Link>
           <Link to="/contact">संपर्क करा</Link>
         </div>
-      </div>
+      </Container>
     </>
   );
 };

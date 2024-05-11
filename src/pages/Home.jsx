@@ -2,10 +2,11 @@ import React from "react";
 import AboutUscomponent from "../Components/AboutUscomponent";
 import aboutUsImage from "../images/aboutUsHeroImage.png";
 import Contactform from "../Components/Contactform";
-import Card from "../Components/Card";
+import Cards from "../Components/Card";
 import cultivator from "../images/cultivator.png";
 import rotavator from "../images/Rotavator.jpeg";
 import { Link } from "react-router-dom";
+import { Container } from "@mui/material";
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       <div className="maincont">
         <div className="cont">
           <div className="text">
-            <h1>शान ॲग्रो</h1>
+            <h1 className="text-3xl font-bold underline">शान ॲग्रो</h1>
             <h1 className="main_heading">समजूतदार शेतकऱ्याची पहिली आवड</h1>
           </div>
         </div>
@@ -22,21 +23,37 @@ const Home = () => {
 
       {/* product card */}
       <h1 className="header">शेती अवजारे</h1>
-      <div className="cardCont">
-        <Card
+      <Container
+        sx={{
+          display: "flex",
+          flexDirection: {
+            lg: "row",
+            md: "row",
+            sm: "column",
+            xs: "column",
+          },
+          justifyContent: {
+            lg: "space-between",
+            md: "space-between",
+            sm: "center",
+            xs: "center",
+          },
+        }}
+      >
+        <Cards
           imgSrc={cultivator}
           prodLink="product/cutlivator"
           info="
         शानच्या कल्टीवेटरसह मातीच्या कठीण परिस्थितीवर मात करा. आमच्या मशीनमध्ये सहज प्रवेशासाठी एक अतिशय मजबूत फ्रेम, सहज ऑपरेशनसाठी हायड्रॉलिक प्रणाली आणि सानुकूलित कामाच्या खोलीसाठी हायड्रॉलिकली ॲडजस्टेबल ड्रॉबार आहे. मजबूत उलाढालीची धुरा दीर्घकाळ टिकणारी कामगिरी सुनिश्चित करते, ज्यामुळे हा शेतकरी कोणत्याही क्षेत्रासाठी एक विश्वासार्ह भागीदार बनतो. "
         />
 
-        <Card
+        <Cards
           imgSrc={rotavator}
           prodLink="product/rotavator"
           info="
           या उच्च-कार्यक्षमतेच्या रोटाव्हेटरसह परिपूर्ण सीडबेड मिळवा. अनेक ब्लेडसह सुसज्ज, ते मातीला बारीक, अगदी सुसंगततेमध्ये मुरवते, लागवडीसाठी आदर्श. शिअर बोल्ट डिझाइनसह शक्तिशाली PTO (पॉवर टेक-ऑफ) शाफ्ट सुरळीत ऑपरेशन सुनिश्चित करते आणि अनपेक्षित ताणापासून ड्राइव्हट्रेनचे संरक्षण करते. परंतु ही कार्यक्षमता शक्तीच्या पलीकडे जाते - नाविन्यपूर्ण डिझाइनमध्ये 18-39% इंधन बचत होते, तुमचे ऑपरेशन किफायतशीर राहते. प्रीमियम बोरॉन स्टीलपासून तयार केलेले, ब्लेड केवळ अपवादात्मक माती शुद्धीकरणच देत नाहीत, तर डाउनटाइम आणि बदली खर्च कमी करून, मानक सामग्रीपेक्षा 50% जास्त आयुष्य वाढवतात."
         />
-      </div>
+      </Container>
       <div className="contLink">
         <Link to="/product" className="header bg-blue">
           अधिक अवजारे बघा
