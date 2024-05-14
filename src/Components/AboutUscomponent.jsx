@@ -1,13 +1,4 @@
-import {
-  Card,
-  Container,
-  CardMedia,
-  CardContent,
-  Button,
-  CardActions,
-  Typography,
-  Box,
-} from "@mui/material";
+import { Card, CardMedia, CardContent, Typography, Box } from "@mui/material";
 import React from "react";
 
 const AboutUscomponent = (props) => {
@@ -35,13 +26,13 @@ const AboutUscomponent = (props) => {
                 title="green iguana"
               />
               <CardContent
-                sx={{ width: "400vh", height: "100%", textAlign: "justify" }}
+                sx={{
+                  width: { lg: "400vh", md: "100%", sm: "100%", xs: "100%" },
+                  height: "100%",
+                  textAlign: "justify",
+                }}
               >
-                <Typography
-                  variant="p"
-                  sx={{ textWrap: "wrap" }}
-                  color="text.secondary"
-                >
+                <Typography variant="p" sx={{ textWrap: "wrap" }} color="#000">
                   {props.content}
                 </Typography>
               </CardContent>
@@ -55,15 +46,26 @@ const AboutUscomponent = (props) => {
               sx={{
                 maxWidth: "100%",
                 display: "flex",
+                flexDirection: {
+                  lg: "row",
+                  md: "column-reverse",
+                  sm: "column-reverse",
+                  xs: "column-reverse",
+                },
                 justifyContent: "space-around",
               }}
             >
-              <CardContent sx={{ width: "400vh", textAlign: "justify" }}>
-                <Typography variant="p" sx={{}} color="text.secondary">
+              <CardContent
+                sx={{
+                  width: { lg: "400vh", md: "100%", sm: "100%", xs: "100%" },
+                  height: "100%",
+                  textAlign: "justify",
+                }}
+              >
+                <Typography variant="p" sx={{ textWrap: "wrap" }} color="#000">
                   {props.content}
                 </Typography>
               </CardContent>
-
               <CardMedia
                 sx={{ height: 400, width: "400vh" }}
                 image={props.imgSrc}

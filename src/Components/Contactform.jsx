@@ -149,7 +149,7 @@ const Contactform = () => {
             px: 6,
             py: 2,
             borderRadius: 50,
-            width: { lg: "25%", md: "100%", sm: "100%" },
+            width: { lg: "45%", md: "100%", sm: "100%" },
             ":hover": {
               bgcolor: "primary.main",
               color: "secondary.main",

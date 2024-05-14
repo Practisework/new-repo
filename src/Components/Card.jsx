@@ -29,7 +29,7 @@ const Cards = (props) => {
           title="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h2" component="div">
             {props.name}
           </Typography>
           <Typography

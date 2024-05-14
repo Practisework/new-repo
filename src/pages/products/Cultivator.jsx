@@ -1,122 +1,137 @@
 import React from "react";
+import Table from "@mui/material/Table";
+import TableCell from "@mui/material/TableCell";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import { Container } from "@mui/material";
 
 const Cultivator = () => {
   return (
-    <div className="table">
-      <table>
-        <tr>
-          <th></th>
-          <th>5 दाते</th>
-          <th>७ दाते</th>
-          <th>९ दाते</th>
-        </tr>
-        <tr>
-          <td className="W">मोडेल</td>
-          <td>SBT-20/5-F/LCS</td>
-          <td>SBT-20/7-F/LCS</td>
-          <td>SBT-20/9-F/LCS</td>
-        </tr>
-        <tr>
-          <td className="W">वजन</td>
-          <td>७३ कि.ग्रा</td>
-          <td>१४५ कि.ग्रा</td>
-          <td>१८५ कि.ग्रा</td>
-        </tr>
-        <tr>
-          <td className="W">फ्रेम</td>
-          <td>50x50 sq. pipe</td>
-          <td>72x72 sq. pipe</td>
-          <td>72x72 sq. pipe</td>
-        </tr>
-        <tr>
-          <td className="W">उंची</td>
-          <td>४०५ मि.मी</td>
-          <td>५३० मि.मी</td>
-          <td>५३० मि.मी</td>
-        </tr>
-        <tr>
-          <td className="W">ट्रॅक्टर (Hp)</td>
-          <td>१८ – २५ Hp</td>
-          <td>३० – ४५ Hp</td>
-          <td>४० - ५५ Hp</td>
-        </tr>
-        <tr>
-          <td className="W">फ्रेम (len)</td>
-          <td>१२३० मि.मी</td>
-          <td>२६१२ मि.मी</td>
-          <td>२१२० मि.मी</td>
-        </tr>
-        <tr>
-          <td className="W">फ्रेम (wid)</td>
-          <td>३८० मि.मी</td>
-          <td>४५० मि.मी</td>
-          <td>४६० मि.मी</td>
-        </tr>
-        <tr>
-          <td className="W">दाते (मि.मी)</td>
-          <td>५</td>
-          <td>७</td>
-          <td>९</td>
-        </tr>
-      </table>
+    <Container
+      sx={{
+        display: "flex",
+        justifyContent: "space-between",
+        flexDirection: { lg: "row", md: "column", sm: "column", xs: "column" },
+      }}
+    >
+      <Table sx={{ m: 4 }}>
+        <TableHead>
+          <TableRow>
+            <TableCell></TableCell>
+            <TableCell>5 दाते</TableCell>
+            <TableCell>७ दाते</TableCell>
+            <TableCell>९ दाते</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableRow>
+          <TableCell className="W">मोडेल</TableCell>
+          <TableCell>SBT-20/5-F/LCS</TableCell>
+          <TableCell>SBT-20/7-F/LCS</TableCell>
+          <TableCell>SBT-20/9-F/LCS</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">वजन</TableCell>
+          <TableCell>७३ कि.ग्रा</TableCell>
+          <TableCell>१४५ कि.ग्रा</TableCell>
+          <TableCell>१८५ कि.ग्रा</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">फ्रेम</TableCell>
+          <TableCell>50x50 sq. pipe</TableCell>
+          <TableCell>72x72 sq. pipe</TableCell>
+          <TableCell>72x72 sq. pipe</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">उंची</TableCell>
+          <TableCell>४०५ मि.मी</TableCell>
+          <TableCell>५३० मि.मी</TableCell>
+          <TableCell>५३० मि.मी</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">ट्रॅक्टर (Hp)</TableCell>
+          <TableCell>१८ – २५ Hp</TableCell>
+          <TableCell>३० – ४५ Hp</TableCell>
+          <TableCell>४० - ५५ Hp</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">फ्रेम (len)</TableCell>
+          <TableCell>१२३० मि.मी</TableCell>
+          <TableCell>२६१२ मि.मी</TableCell>
+          <TableCell>२१२० मि.मी</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">फ्रेम (wid)</TableCell>
+          <TableCell>३८० मि.मी</TableCell>
+          <TableCell>४५० मि.मी</TableCell>
+          <TableCell>४६० मि.मी</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">दाते (मि.मी)</TableCell>
+          <TableCell>५</TableCell>
+          <TableCell>७</TableCell>
+          <TableCell>९</TableCell>
+        </TableRow>
+      </Table>
       {/* ---------------------------------------------------------------------- */}
-      <table>
-        <tr>
-          <th></th>
-          <th>5 दाते</th>
-          <th>७ दाते</th>
-          <th>९ दाते</th>
-        </tr>
-        <tr>
-          <td className="W">मोडेल</td>
-          <td>SBT-20/5-F/SHS</td>
-          <td>SBT-20/7-F/SHS</td>
-          <td>SBT-20/9-F/SHS</td>
-        </tr>
-        <tr>
-          <td className="W">वजन</td>
-          <td>७४ कि.ग्रा</td>
-          <td>१५५ कि.ग्रा</td>
-          <td>१५७ कि.ग्रा</td>
-        </tr>
-        <tr>
-          <td className="W">फ्रेम</td>
-          <td>3 in C channel</td>
-          <td>4 in C channel</td>
-          <td>4 in C channel</td>
-        </tr>
-        <tr>
-          <td className="W">उंची</td>
-          <td>४०५ मि.मी</td>
-          <td>५३० मि.मी</td>
-          <td>५३० मि.मी</td>
-        </tr>
-        <tr>
-          <td className="W">ट्रॅक्टर (Hp)</td>
-          <td>१८ – २५ Hp</td>
-          <td>३० – ४५ Hp</td>
-          <td>४० - ५५ Hp</td>
-        </tr>
-        <tr>
-          <td className="W">फ्रेम (len)</td>
-          <td>१२३० मि.मी</td>
-          <td>२६१२ मि.मी</td>
-          <td>२१२० मि.मी</td>
-        </tr>
-        <tr>
-          <td className="W">फ्रेम (wid)</td>
-          <td>३८० मि.मी</td>
-          <td>४५० मि.मी</td>
-          <td>४६० मि.मी</td>
-        </tr>
-        <tr>
-          <td className="W">दाते (मि.मी)</td>
-          <td>५</td>
-          <td>७</td>
-          <td>९</td>
-        </tr>
-      </table>
-    </div>
+      <Table sx={{ m: 4 }}>
+        <TableHead>
+          <TableRow>
+            <TableCell></TableCell>
+            <TableCell>5 दाते</TableCell>
+            <TableCell>७ दाते</TableCell>
+            <TableCell>९ दाते</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableRow>
+          <TableCell className="W">मोडेल</TableCell>
+          <TableCell>SBT-20/5-F/SHS</TableCell>
+          <TableCell>SBT-20/7-F/SHS</TableCell>
+          <TableCell>SBT-20/9-F/SHS</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">वजन</TableCell>
+          <TableCell>७४ कि.ग्रा</TableCell>
+          <TableCell>१५५ कि.ग्रा</TableCell>
+          <TableCell>१५७ कि.ग्रा</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">फ्रेम</TableCell>
+          <TableCell>3 in C channel</TableCell>
+          <TableCell>4 in C channel</TableCell>
+          <TableCell>4 in C channel</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">उंची</TableCell>
+          <TableCell>४०५ मि.मी</TableCell>
+          <TableCell>५३० मि.मी</TableCell>
+          <TableCell>५३० मि.मी</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">ट्रॅक्टर (Hp)</TableCell>
+          <TableCell>१८ – २५ Hp</TableCell>
+          <TableCell>३० – ४५ Hp</TableCell>
+          <TableCell>४० - ५५ Hp</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">फ्रेम (len)</TableCell>
+          <TableCell>१२३० मि.मी</TableCell>
+          <TableCell>२६१२ मि.मी</TableCell>
+          <TableCell>२१२० मि.मी</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">फ्रेम (wid)</TableCell>
+          <TableCell>३८० मि.मी</TableCell>
+          <TableCell>४५० मि.मी</TableCell>
+          <TableCell>४६० मि.मी</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="W">दाते (मि.मी)</TableCell>
+          <TableCell>५</TableCell>
+          <TableCell>७</TableCell>
+          <TableCell>९</TableCell>
+        </TableRow>
+      </Table>
+    </Container>
   );
 };
 
