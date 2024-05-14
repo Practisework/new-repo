@@ -29,7 +29,7 @@ const GarudPlus = () => {
           </TableRow>
         </TableHead>
         <TableRow>
-          <TableHead>Working widTableHead (mm)</TableHead>
+          <TableHead>Working width (mm)</TableHead>
           <TableCell>१०६०</TableCell>
           <TableCell>१३१२</TableCell>
           <TableCell>१५६२</TableCell>
@@ -51,7 +51,7 @@ const GarudPlus = () => {
           <TableCell>५४०/१०००</TableCell>
         </TableRow>
         <TableRow>
-          <TableHead>Side TableRowansmission</TableHead>
+          <TableHead>Side transmission</TableHead>
           <TableCell>Gear drive</TableCell>
           <TableCell>Gear drive</TableCell>
           <TableCell>Gear drive</TableCell>
@@ -95,7 +95,7 @@ const GarudPlus = () => {
           <TableCell>५१०</TableCell>
         </TableRow>
         <TableRow>
-          <TableHead>TableRowactor power (Hp)</TableHead>
+          <TableHead>Tr actor power (Hp)</TableHead>
           <TableCell>३०-३५</TableCell>
           <TableCell>३५-४०</TableCell>
           <TableCell>४०-४५</TableCell>

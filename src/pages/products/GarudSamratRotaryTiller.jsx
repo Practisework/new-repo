@@ -1,59 +1,70 @@
 import React from "react";
-const GarudSamratRotaryTiller = () => {
+import Table from "@mui/material/Table";
+import TableCell from "@mui/material/TableCell";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import { Container } from "@mui/material";
+const GarudSamraTableRowotaryTiller = () => {
   return (
-    <div className="table">
-      <table>
-        <tr>
-          <th>मॉडेल</th>
-          <th>१६५४८</th>
-          <th>१८५५४</th>
-          <th>२०५६०</th>
-        </tr>
-        <tr>
-          <th className="W">Working width</th>
-          <td>१६५०</td>
-          <td>१८५०</td>
-          <td>२०५०</td>
-        </tr>
-        <tr>
-          <th className="W">Gearbox rpm</th>
-          <td>५४०/१०००</td>
-          <td>५४०/१०००</td>
-          <td>५४०/१०००</td>
-        </tr>
-        <tr>
-          <th className="W">Side transmission</th>
-          <td>Gear drive</td>
-          <td>Gear drive</td>
-          <td>Gear drive</td>
-        </tr>
-        <tr>
-          <th className="W">पाते</th>
-          <td>४८</td>
-          <td>५४</td>
-          <td>६०</td>
-        </tr>
-        <tr>
-          <th className="W">Driveline safety</th>
-          <td>Shear bolt</td>
-          <td>Shear bolt</td>
-          <td>Shear bolt</td>
-        </tr>
-        <tr>
-          <th className="W">वजन(कि.ग्रा.)</th>
-          <td>३५५</td>
-          <td>३७५</td>
-          <td>३९५</td>
-        </tr>
-        <tr>
-          <th className="W">Tractor power</th>
-          <td>३५-४०</td>
-          <td>४०-४५</td>
-          <td>४५-५०</td>
-        </tr>
-      </table>
-    </div>
+    <Container
+      sx={{
+        display: "flex",
+        justifyContent: "space-between",
+        flexDirection: { lg: "row", md: "column", sm: "column", xs: "column" },
+      }}
+    >
+      <Table>
+        <TableRow>
+          <TableCell>मॉडेल</TableCell>
+          <TableCell>१६५४८</TableCell>
+          <TableCell>१८५५४</TableCell>
+          <TableCell>२०५६०</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Working width</TableHead>
+          <TableCell>१६५०</TableCell>
+          <TableCell>१८५०</TableCell>
+          <TableCell>२०५०</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Gearbox rpm</TableHead>
+          <TableCell>५४०/१०००</TableCell>
+          <TableCell>५४०/१०००</TableCell>
+          <TableCell>५४०/१०००</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Side transmission</TableHead>
+          <TableCell>Gear drive</TableCell>
+          <TableCell>Gear drive</TableCell>
+          <TableCell>Gear drive</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">पाते</TableHead>
+          <TableCell>४८</TableCell>
+          <TableCell>५४</TableCell>
+          <TableCell>६०</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Driveline safety</TableHead>
+          <TableCell>Shear bolt</TableCell>
+          <TableCell>Shear bolt</TableCell>
+          <TableCell>Shear bolt</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">वजन(कि.ग्रा.)</TableHead>
+          <TableCell>३५५</TableCell>
+          <TableCell>३७५</TableCell>
+          <TableCell>३९५</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">tractor power</TableHead>
+          <TableCell>३५-४०</TableCell>
+          <TableCell>४०-४५</TableCell>
+          <TableCell>४५-५०</TableCell>
+        </TableRow>
+      </Table>
+    </Container>
   );
 };
 
-export default GarudSamratRotaryTiller;
+export default GarudSamraTableRowotaryTiller;
