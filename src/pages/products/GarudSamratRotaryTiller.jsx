@@ -4,7 +4,7 @@ import TableCell from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import { Container } from "@mui/material";
-const GarudSamraTableRowotaryTiller = () => {
+const GarudSamratRotaryTiller = () => {
   return (
     <Container
       sx={{
@@ -67,4 +67,4 @@ const GarudSamraTableRowotaryTiller = () => {
   );
 };
 
-export default GarudSamraTableRowotaryTiller;
+export default GarudSamratRotaryTiller;
