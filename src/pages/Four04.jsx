@@ -20,7 +20,6 @@ const Four04 = () => {
           src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTV5OGt5MjhyM2F1ZTNjYXdwbXRkMng0ZzJvbnl5a3RocDVzMTJ5biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/18Ouvl2RKhIqLekPSV/giphy.gif"
           alt=""
           srcset=""
-          className="F04Img"
         />
         <Box>
           <Typography variant="h1">404 page not found</Typography>

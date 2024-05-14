@@ -1,65 +1,78 @@
 import React from "react";
+import Table from "@mui/material/Table";
+import TableCell from "@mui/material/TableCell";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import { Container } from "@mui/material";
 
 const GarudPoloRotaryTiller = () => {
   return (
-    <div className="table">
-      <table>
-        <tr>
-          <th>मॉडेल</th>
-          <th>१००१६</th>
-          <th>१००२०</th>
-          <th>१००२४</th>
-        </tr>
-        <tr>
-          <th className="W">Working width</th>
-          <td>८५०</td>
-          <td>१०५०</td>
-          <td>१२५०</td>
-        </tr>
-        <tr>
-          <th className="W">Side transmission</th>
-          <td>Gear drive</td>
-          <td>Gear drive</td>
-          <td>Gear drive</td>
-        </tr>
-        <tr>
-          <th className="W">पाते</th>
-          <td>१६</td>
-          <td>२०</td>
-          <td>२४</td>
-        </tr>
-        <tr>
-          <th className="W">Rotor rpm</th>
-          <td>२२३</td>
-          <td>२२३</td>
-          <td>२२३</td>
-        </tr>
-        <tr>
-          <th className="W">Driveline safety</th>
-          <td>Shear bolt</td>
-          <td>Shear bolt</td>
-          <td>Shear bolt</td>
-        </tr>
-        <tr>
-          <th className="W">Three point linkage</th>
-          <td>CAT - 1</td>
-          <td>CAT - 1</td>
-          <td>CAT - 1</td>
-        </tr>
-        <tr>
-          <th className="W">वजन(कि.ग्रा.)</th>
-          <td>१८५</td>
-          <td>१९५</td>
-          <td>२१०</td>
-        </tr>
-        <tr>
-          <th className="W">Tractor power</th>
-          <td>१५-२०</td>
-          <td>२०-२५</td>
-          <td>२५-३०</td>
-        </tr>
-      </table>
-    </div>
+    <Container
+      sx={{
+        display: "flex",
+        justifyContent: "space-between",
+        flexDirection: { lg: "row", md: "column", sm: "column", xs: "column" },
+      }}
+    >
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell>मॉडेल</TableCell>
+            <TableCell>१००१६</TableCell>
+            <TableCell>१००२०</TableCell>
+            <TableCell>१००२४</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableRow>
+          <TableHead className="W">Working width</TableHead>
+          <TableCell>८५०</TableCell>
+          <TableCell>१०५०</TableCell>
+          <TableCell>१२५०</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Side transmission</TableHead>
+          <TableCell>Gear drive</TableCell>
+          <TableCell>Gear drive</TableCell>
+          <TableCell>Gear drive</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">पाते</TableHead>
+          <TableCell>१६</TableCell>
+          <TableCell>२०</TableCell>
+          <TableCell>२४</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Rotor rpm</TableHead>
+          <TableCell>२२३</TableCell>
+          <TableCell>२२३</TableCell>
+          <TableCell>२२३</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Driveline safety</TableHead>
+          <TableCell>Shear bolt</TableCell>
+          <TableCell>Shear bolt</TableCell>
+          <TableCell>Shear bolt</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">three point linkage</TableHead>
+          <TableCell>CAT - 1</TableCell>
+          <TableCell>CAT - 1</TableCell>
+          <TableCell>CAT - 1</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">वजन(कि.ग्रा.)</TableHead>
+          <TableCell>१८५</TableCell>
+          <TableCell>१९५</TableCell>
+          <TableCell>२१०</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">tractor power</TableHead>
+          <TableCell>१५-२०</TableCell>
+          <TableCell>२०-२५</TableCell>
+          <TableCell>२५-३०</TableCell>
+        </TableRow>
+      </Table>
+    </Container>
   );
 };
 

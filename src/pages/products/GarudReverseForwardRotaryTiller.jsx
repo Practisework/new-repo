@@ -1,83 +1,96 @@
 import React from "react";
+import Table from "@mui/material/Table";
+import TableCell from "@mui/material/TableCell";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import { Container } from "@mui/material";
 
 const GarudReverseForwardRotaryTiller = () => {
   return (
-    <div className="table">
-      <table>
-        <tr>
-          <th>Parameter</th>
-          <th>२.६ Ft</th>
-          <th>२.८ Ft</th>
-          <th>३.२ Ft</th>
-        </tr>
-        <tr>
-          <th className="W">Number of blades</th>
-          <td>१६ पाते</td>
-          <td>१८ पाते</td>
-          <td>२२ पाते</td>
-        </tr>
-        <tr>
-          <th className="W">Working width</th>
-          <td>५४५ मि. मी.</td>
-          <td>६१० मि.मी.</td>
-          <td>७४५ मि.मी.</td>
-        </tr>
-        <tr>
-          <th className="W">Overall length</th>
-          <td>१३३२ मि.मी.</td>
-          <td>१३३२ मि.मी.</td>
-          <td>१३३२ मि.मी.</td>
-        </tr>
-        <tr>
-          <th className="W">Overall width</th>
-          <td>७८० मि.मी.</td>
-          <td>८५० मि.मी.</td>
-          <td>९८० मि.मी.</td>
-        </tr>
-        <tr>
-          <th className="W">Overall height</th>
-          <td>८५०</td>
-          <td>८५०</td>
-          <td>८५०</td>
-        </tr>
-        <tr>
-          <th className="W">Gearbox</th>
-          <td>Single speed</td>
-          <td>Single speed</td>
-          <td>Single speed</td>
-        </tr>
-        <tr>
-          <th className="W">Rotor rpm</th>
-          <td>२९७</td>
-          <td>२९७</td>
-          <td>२९७</td>
-        </tr>
-        <tr>
-          <th className="W">Side transmission</th>
-          <td>Chain drive</td>
-          <td>Chain drive</td>
-          <td>Chain drive</td>
-        </tr>
-        <tr>
-          <th className="W">वजन</th>
-          <td>१४५</td>
-          <td>१५२</td>
-          <td>१५९</td>
-        </tr>
-        <tr>
-          <th className="W">P.T.O RPM</th>
-          <td>५४०</td>
-          <td>५४०</td>
-          <td>५४०</td>
-        </tr>
-        <tr>
-          <th className="W">Tractor power</th>
-          <td>१५-२५ Hp</td>
-          <td>१५-२५ Hp</td>
-          <td>१५-२५ Hp</td>
-        </tr>
-      </table>
-    </div>
+    <Container
+      sx={{
+        display: "flex",
+        justifyContent: "space-between",
+        flexDirection: { lg: "row", md: "column", sm: "column", xs: "column" },
+      }}
+    >
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell>Parameter</TableCell>
+            <TableCell>२.६ Ft</TableCell>
+            <TableCell>२.८ Ft</TableCell>
+            <TableCell>३.२ Ft</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableRow>
+          <TableHead className="W">Number of blades</TableHead>
+          <TableCell>१६ पाते</TableCell>
+          <TableCell>१८ पाते</TableCell>
+          <TableCell>२२ पाते</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Working width</TableHead>
+          <TableCell>५४५ मि. मी.</TableCell>
+          <TableCell>६१० मि.मी.</TableCell>
+          <TableCell>७४५ मि.मी.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Overall length</TableHead>
+          <TableCell>१३३२ मि.मी.</TableCell>
+          <TableCell>१३३२ मि.मी.</TableCell>
+          <TableCell>१३३२ मि.मी.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Overall width</TableHead>
+          <TableCell>७८० मि.मी.</TableCell>
+          <TableCell>८५० मि.मी.</TableCell>
+          <TableCell>९८० मि.मी.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Overall height</TableHead>
+          <TableCell>८५०</TableCell>
+          <TableCell>८५०</TableCell>
+          <TableCell>८५०</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Gearbox</TableHead>
+          <TableCell>Single speed</TableCell>
+          <TableCell>Single speed</TableCell>
+          <TableCell>Single speed</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Rotor rpm</TableHead>
+          <TableCell>२९७</TableCell>
+          <TableCell>२९७</TableCell>
+          <TableCell>२९७</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Side transmission</TableHead>
+          <TableCell>Chain drive</TableCell>
+          <TableCell>Chain drive</TableCell>
+          <TableCell>Chain drive</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">वजन</TableHead>
+          <TableCell>१४५</TableCell>
+          <TableCell>१५२</TableCell>
+          <TableCell>१५९</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">P.T.O RPM</TableHead>
+          <TableCell>५४०</TableCell>
+          <TableCell>५४०</TableCell>
+          <TableCell>५४०</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Tractor power</TableHead>
+          <TableCell>१५-२५ Hp</TableCell>
+          <TableCell>१५-२५ Hp</TableCell>
+          <TableCell>१५-२५ Hp</TableCell>
+        </TableRow>
+      </Table>
+    </Container>
   );
 };
 

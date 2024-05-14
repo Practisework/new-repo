@@ -45,42 +45,12 @@ const Contactform = () => {
         }}
         className="main"
       >
-        <OutlinedInput
-          type="text"
-          value={name}
-          sx={{
-            width: "100%",
-            mx: 2,
-            my: 1,
-            borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
-            px: 4,
-            color: "primary.main",
-            fontSize: "2rem",
-          }}
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
-          placeholder="तुमचे नाव"
-        />
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: {
-              lg: "row",
-              md: "column",
-              sm: "column",
-              xs: "column",
-            },
-            justifyContent: "center",
-          }}
-        >
+        <form action="Post">
           <OutlinedInput
             type="text"
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
+            value={name}
             sx={{
-              width: { lg: "100", md: "100%", sm: "100%" },
+              width: "100%",
               mx: 2,
               my: 1,
               borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
@@ -88,16 +58,76 @@ const Contactform = () => {
               color: "primary.main",
               fontSize: "2rem",
             }}
-            value={email}
-            placeholder="इ-मेल"
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+            placeholder="तुमचे नाव"
           />
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: {
+                lg: "row",
+                md: "column",
+                sm: "column",
+                xs: "column",
+              },
+              justifyContent: "center",
+            }}
+          >
+            <OutlinedInput
+              type="text"
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+              sx={{
+                width: { lg: "100", md: "100%", sm: "100%" },
+                mx: 2,
+                my: 1,
+                borderRadius: {
+                  lg: "50px",
+                  md: "30px",
+                  sm: "20px",
+                  xs: "10px",
+                },
+                px: 4,
+                color: "primary.main",
+                fontSize: "2rem",
+              }}
+              value={email}
+              placeholder="इ-मेल"
+            />
+            <OutlinedInput
+              type="text"
+              onChange={(e) => {
+                setPhone(e.target.value);
+              }}
+              sx={{
+                width: { lg: "100", md: "100%", sm: "100%" },
+                mx: 2,
+                my: 1,
+                borderRadius: {
+                  lg: "50px",
+                  md: "30px",
+                  sm: "20px",
+                  xs: "10px",
+                },
+                px: 4,
+                color: "primary.main",
+                fontSize: "2rem",
+              }}
+              value={phone}
+              placeholder="फोन नं."
+            />
+          </Box>
           <OutlinedInput
             type="text"
+            value={prod}
             onChange={(e) => {
-              setPhone(e.target.value);
+              setProd(e.target.value);
             }}
             sx={{
-              width: { lg: "100", md: "100%", sm: "100%" },
+              width: "100%",
               mx: 2,
               my: 1,
               borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
@@ -105,60 +135,42 @@ const Contactform = () => {
               color: "primary.main",
               fontSize: "2rem",
             }}
-            value={phone}
-            placeholder="फोन नं."
+            placeholder="तुम्ही खरेदी करू इच्छित अवजाराचे नाव"
           />
-        </Box>
-        <OutlinedInput
-          type="text"
-          value={prod}
-          onChange={(e) => {
-            setProd(e.target.value);
-          }}
-          sx={{
-            width: "100%",
-            mx: 2,
-            my: 1,
-            borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
-            px: 4,
-            color: "primary.main",
-            fontSize: "2rem",
-          }}
-          placeholder="तुम्ही खरेदी करू इच्छित अवजाराचे नाव"
-        />
-        <OutlinedInput
-          type="text"
-          onChange={(e) => {
-            setAddr(e.target.value);
-          }}
-          value={addr}
-          sx={{
-            width: "100%",
-            mx: 2,
-            my: 1,
-            borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
-            px: 4,
-            color: "primary.main",
-            fontSize: "2rem",
-          }}
-          placeholder="तुमचा पत्ता"
-        />
-        <Button
-          variant="outlined"
-          sx={{
-            px: 6,
-            py: 2,
-            borderRadius: 50,
-            width: { lg: "45%", md: "100%", sm: "100%" },
-            ":hover": {
-              bgcolor: "primary.main",
-              color: "secondary.main",
-            },
-          }}
-          onClick={Submitform}
-        >
-          <Typography variant="h2">नोंदणी पूर्ण करा</Typography>
-        </Button>
+          <OutlinedInput
+            type="text"
+            onChange={(e) => {
+              setAddr(e.target.value);
+            }}
+            value={addr}
+            sx={{
+              width: "100%",
+              mx: 2,
+              my: 1,
+              borderRadius: { lg: "50px", md: "30px", sm: "20px", xs: "10px" },
+              px: 4,
+              color: "primary.main",
+              fontSize: "2rem",
+            }}
+            placeholder="तुमचा पत्ता"
+          />
+          <Button
+            variant="outlined"
+            sx={{
+              px: 6,
+              py: 2,
+              borderRadius: 50,
+              width: { lg: "45%", md: "100%", sm: "100%" },
+              ":hover": {
+                bgcolor: "primary.main",
+                color: "secondary.main",
+              },
+            }}
+            onClick={Submitform}
+          >
+            <Typography variant="h2">नोंदणी पूर्ण करा</Typography>
+          </Button>
+        </form>
       </Container>
     </>
   );

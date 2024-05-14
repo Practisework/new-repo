@@ -21,7 +21,12 @@ const AboutUscomponent = (props) => {
               }}
             >
               <CardMedia
-                sx={{ height: 400, width: "400vh" }}
+                sx={{
+                  height: 400,
+                  width: "400vh",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
                 image={props.imgSrc}
                 title="green iguana"
               />

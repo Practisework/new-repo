@@ -1,94 +1,105 @@
 import React from "react";
+import Table from "@mui/material/Table";
+import TableCell from "@mui/material/TableCell";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import { Container } from "@mui/material";
 
 const GarudHarvester = () => {
   return (
-    <div className="table">
-      <table>
-        <tr>
-          <th>Engine</th>
-          <th>Tata 4sp rtv</th>
-        </tr>
-        <tr>
-          <th className="W">No of cylinders</th>
-          <td>४</td>
-        </tr>
-        <tr>
-          <th className="W">Power (HP)</th>
-          <td>60@1250-2850 rpm</td>
-        </tr>
-        <tr>
-          <th className="W">Cooling system</th>
-          <td>water cooled</td>
-        </tr>
-        <tr>
-          <th className="W">Drum diameter</th>
-          <td>४६० मि.मी.</td>
-        </tr>
-        <tr>
-          <th className="W">width</th>
-          <td>५७० मि.मी.</td>
-        </tr>
-        <tr>
-          <th className="W">Rotor speed rpm</th>
-          <td>५००-१२७५</td>
-        </tr>
-        <tr>
-          <th className="W">Cleaning area</th>
-          <td>१.६ स्वे. मि.</td>
-        </tr>
-        <tr>
-          <th className="W">Transmission</th>
-          <td>hydrostatic</td>
-        </tr>
-      </table>
+    <Container
+      sx={{
+        display: "flex",
+        justifyContent: "space-between",
+        flexDirection: { lg: "row", md: "column", sm: "column", xs: "column" },
+      }}
+    >
+      <Table sx={{ m: 4 }}>
+        <TableRow>
+          <TableHead>Engine</TableHead>
+          <TableCell>Tata 4sp rtv</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">No of cylinders</TableHead>
+          <TableCell>४</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Power (HP)</TableHead>
+          <TableCell>60@1250-2850 rpm</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Cooling system</TableHead>
+          <TableCell>water cooled</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Drum diameter</TableHead>
+          <TableCell>४६० मि.मी.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">width</TableHead>
+          <TableCell>५७० मि.मी.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Rotor speed rpm</TableHead>
+          <TableCell>५००-१२७५</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Cleaning area</TableHead>
+          <TableCell>१.६ स्वे. मि.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">transmission</TableHead>
+          <TableCell>hydrostatic</TableCell>
+        </TableRow>
+      </Table>
 
-      <table>
-        <tr>
-          <th className="W">No. of Roller</th>
-          <td>१०</td>
-        </tr>
-        <tr>
-          <th>Area coverage</th>
-          <td>60-70</td>
-        </tr>
-        <tr>
-          <th className="W">Unloading system</th>
-          <td>Universal join type</td>
-        </tr>
-        <tr>
-          <th className="W">Cutting width</th>
-          <td>७Ft</td>
-        </tr>
-        <tr>
-          <th className="W">Lift height</th>
-          <td>९२५ मि.मी </td>
-        </tr>
-        <tr>
-          <th className="W">performance</th>
-          <td>0.9 to 1 acres per hour </td>
-        </tr>
-        <tr>
-          <th className="W">Diesel consumption</th>
-          <td>७/८ ली./HOUR </td>
-        </tr>
-        <tr>
-          <th className="W">Fuel tank</th>
-          <td>१०५ ली.</td>
-        </tr>
-        <tr>
-          <th className="W">LxWxH (mm)</th>
-          <td>5810x2560x2980</td>
-        </tr>
-        <tr>
-          <th className="W">Ground clearance</th>
-          <td>२४०</td>
-        </tr>
-        <tr>
-          <th className="W">वजन</th>
-          <td>४६०० कि.ग्रा.</td>
-        </tr>
-      </table>
-    </div>
+      <Table sx={{ m: 4 }}>
+        <TableRow>
+          <TableHead className="W">No. of Roller</TableHead>
+          <TableCell>१०</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead>Area coverage</TableHead>
+          <TableCell>60-70</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Unloading system</TableHead>
+          <TableCell>Universal join type</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Cutting width</TableHead>
+          <TableCell>७Ft</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Lift height</TableHead>
+          <TableCell>९२५ मि.मी </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">performance</TableHead>
+          <TableCell>0.9 to 1 acres per hour </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Diesel consumption</TableHead>
+          <TableCell>७/८ ली./HOUR </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Fuel tank</TableHead>
+          <TableCell>१०५ ली.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">LxWxH (mm)</TableHead>
+          <TableCell>5810x2560x2980</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">Ground clearance</TableHead>
+          <TableCell>२४०</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableHead className="W">वजन</TableHead>
+          <TableCell>४६०० कि.ग्रा.</TableCell>
+        </TableRow>
+      </Table>
+    </Container>
   );
 };
 
