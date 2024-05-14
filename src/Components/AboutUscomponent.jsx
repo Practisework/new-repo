@@ -69,7 +69,7 @@ const AboutUscomponent = (props) => {
               <CardMedia
                 sx={{ height: 400, width: "400vh" }}
                 image={props.imgSrc}
-                title="green iguana"
+                title=""
               />
             </Box>
           </Card>

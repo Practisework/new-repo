@@ -23,7 +23,7 @@ function App() {
           return (
             <>
               <Route
-                path={"/product/" + val.nameEng}
+                path={`/product/${val.nameEng}`}
                 element={
                   <IndieProduct
                     name={val.name}
